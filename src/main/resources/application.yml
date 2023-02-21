@@ -1,0 +1,15 @@
+server:
+    port: 8080
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+        username: root
+        password: 123456
+    mvc:
+      pathmatch:
+          matching-strategy: ant_path_matcher
+knife4j:
+    enable: true #开启配置增强
+    setting:
+        enableVersion: true
